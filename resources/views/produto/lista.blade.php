@@ -1,6 +1,6 @@
 @extends('layout')
-@section('conteudo')
 
+@section('conteudo')
 
     <section class="container busca mt-4">
         <label for="Busca">Busca</label>
@@ -16,14 +16,14 @@
                 <p>{{$item->nome}} {{$item->medida}}</p>
                 <p>{{$item->bairro}}, {{$item->cidade}}</p>
                 @if ($item->destaque === 'on')
-                    <span class="destaque">destaque</span>
+                    <img src="img/destaque.png" alt="Imagem" class="destaque">
                 @endif
 
                 <div class="fotos mt-1">
-                    <img src="img/fotos1.jpg" alt="Imagem">
-                    <img src="img/fotos2.jpg" alt="Imagem">
-                    <img src="img/fotos3.jpg" alt="Imagem">
-                    <img src="img/fotos3.jpg" alt="Imagem">
+                    <img src="img/fotos1.jpg" alt="Foto do imovel">
+                    <img src="img/fotos2.jpg" alt="Foto do imovel">
+                    <img src="img/fotos3.jpg" alt="Foto do imovel">
+                    <img src="img/fotos3.jpg" alt="Foto do imovel">
                     <hr class="linha">
                     <div class="preco">
                         <span>{{$item->medida}}</span>
