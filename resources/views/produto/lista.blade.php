@@ -20,10 +20,9 @@
                 @endif
 
                 <div class="fotos mt-1">
-                    <img src="img/fotos1.jpg" alt="Foto do imovel">
-                    <img src="img/fotos2.jpg" alt="Foto do imovel">
-                    <img src="img/fotos3.jpg" alt="Foto do imovel">
-                    <img src="img/fotos3.jpg" alt="Foto do imovel">
+                    @foreach ($item->imagens as $link)
+                    <img src="'{{$link->file}}'" alt="Foto do imovel">
+                    @endforeach
                     <hr class="linha">
                     <div class="preco">
                         <span>{{$item->medida}}</span>
